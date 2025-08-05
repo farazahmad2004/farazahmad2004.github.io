@@ -1,82 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faraz Ahmad - Personal Website</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #fff;
-    }
-    nav {
-      background-color: #222;
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav ul {
-      list-style-type: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .profile-section {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .profile-section img {
-      width: 120px;
-      height: 120px;
-      border-radius: 100px;
-      object-fit: cover;
-    }
-    .profile-name {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-    .about-section {
-      padding: 0 2rem 2rem;
-      max-width: 700px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faraz Ahmad</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .profile img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid #3399ff;
+        }
+
+        .profile h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .description {
+            max-width: 800px;
+            margin: 30px auto;
+            font-size: 20px;
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <nav>
-    <div class="logo">My Portfolio</div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+    <section class="hero">
+        <div class="profile">
+            <img src="My_Image.jpg" alt="Faraz Ahmad" />
+            <h1>Faraz Ahmad</h1>
+        </div>
+        <div class="description" id="about">
+            <p>
+                I am a Computer Science student with a deep passion for Artificial Intelligence, Machine Learning, and Deep Learning.
+                My interests lie in building impactful systems that combine mathematical rigor with practical software.
+                I enjoy solving challenging problems and am continuously learning to enhance my skill set.
+            </p>
+        </div>
+    </section>
 
-  <section class="profile-section">
-    <img src="My_Image.jpg" alt="Profile Image">
-    <div class="profile-name">Faraz Ahmad</div>
-  </section>
+    <section class="description" id="projects">
+        <h2>Projects</h2>
+        <p>Coming soon: A showcase of my best work in Machine Learning, Deep Learning, and systems programming.</p>
+    </section>
 
-  <section class="about-section">
-    <p>
-      I'm a Computer Science student with a strong passion for Machine Learning, Deep Learning, and Artificial Intelligence. 
-      I'm actively exploring real-world projects and research opportunities. 
-      My goal is to build practical and impactful AI solutions.
-    </p>
-  </section>
-
+    <section class="description" id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me via email at: <strong>faraz.ahmad@example.com</strong></p>
+    </section>
 </body>
 </html>
